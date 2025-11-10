@@ -70,4 +70,9 @@ main figure img {
     height: 250px;
 }
 
+main .techs .projects-container .projects img {
+    width: 250px;
 }
+
+}
+
