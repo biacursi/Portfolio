@@ -26,6 +26,7 @@
   main .techs .cards-container,
   .main-content .text p {
     margin-top: 32px;
+    justify-content: center;
   }
 }
 
@@ -46,7 +47,7 @@
   }
 
   header nav a {
-    font-size: 1em;
+    font-size: 2em;
   }
 
   main .techs .cards-container .card {
