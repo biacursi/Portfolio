@@ -251,7 +251,7 @@ main #sobre-mim .sobre-mim-texto h2 {
 /* Container que organiza Título vs Projetos */
 .layout-projetos {
   display: flex;
-  gap: 60px;
+
   align-items: flex-start;
   width: 100%;
   max-width: 100%;
@@ -263,19 +263,19 @@ main #sobre-mim .sobre-mim-texto h2 {
   font-size: 5em;
   font-weight: 800;
   color: #ffffff;
-  opacity: 0.1; /* Dá aquele efeito de fundo moderno */
+  opacity: 0.1;
   writing-mode: vertical-rl; /* Gira o texto */
   transform: rotate(180deg);
-  margin: 60px;
   line-height: 1;
+  margin: 40px;
 }
 
 /* Grade de projetos */
 .lista-projetos {
   display: flex;
   flex-wrap: wrap; /* Faz os projetos pularem de linha se não couberem */
-  gap: 30px;
-  flex: 1;
+  gap: 20px;
+  justify-content: space-between;
 }
 
 /* Card individual do projeto */
@@ -305,16 +305,15 @@ main #sobre-mim .sobre-mim-texto h2 {
 
 .capa-projeto img:hover {
   transform: scale(1.02);
-  border-color: #d7b4fa; /* Roxo da sua identidade */
+  border-color: #d7b4fa;
 }
 
 .info-projeto h3 {
-  font-size: 1em;
+  font-size: 1.2em;
   color: #222;
   margin: 20px 0 10px 0;
 }
 
-/* Tags de linguagens (estilo o que você usou em Habilidades) */
 .tags-tecnologias {
   display: flex;
   gap: 5px;
