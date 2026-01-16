@@ -45,8 +45,7 @@ Este repositório hospeda meu portfólio pessoal construído **do zero**. O obje
 
 * **Tipografia:** [Montserrat](https://fonts.google.com/specimen/Montserrat) (Google Fonts).
 * **Ícones:** Font Awesome.
-* **Metodologia:** BEM (Block Element Modifier) *[Opcional: adicione se você usou]* ou CSS Modular.
-
+* 
 ---
 
 ## 📂 Arquitetura de Pastas
