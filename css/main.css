@@ -1,0 +1,466 @@
+/* FIGURE ICON ========= */
+
+main figure {
+  display: flex;
+  flex-direction: column; /* Empilha a div e o span */
+  align-items: flex-start; /* Alinha tudo para a esquerda */
+  gap: 15px;
+  margin-left: 120px;
+}
+
+.perfil-container {
+  display: flex;
+  flex-direction: row; /* Mantém imagem e p lado a lado */
+  align-items: center; /* Alinha o texto no meio da altura da imagem */
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+
+main figure img {
+  width: 340px;
+  height: 340px;
+  cursor: pointer;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+
+main figure p {
+  color: #686767;
+  font-size: 2em;
+  font-weight: 600;
+  margin: 0;
+  max-width: 8ch;
+  text-align: left;
+  display: block;
+}
+
+main figure p::after {
+  display: block;
+  position: relative;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.detalhe {
+  font-size: 3em;
+  max-width: 15ch;
+  text-align: left;
+  position: relative;
+  display: block;
+}
+
+.detalhe::before {
+  content: url("../img/detalhe.svg");
+  display: block;
+  z-index: -1;
+  position: absolute;
+  left: -30px;
+}
+
+.container-index {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Centraliza horizontalmente na tela */
+  background: linear-gradient(
+    to bottom,
+    rgba(26, 26, 26, 0) 70%,
+    rgba(26, 26, 26, 1) 100%
+  );
+  width: 100%;
+  min-height: 100vh;
+  padding-bottom: 120px;
+}
+
+main #sobre-mim {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin-inline: 20%;
+  gap: 2em;
+  padding-top: 120px;
+}
+
+#sobre-mim span::before {
+  content: "";
+  width: 40px;
+  height: 3px;
+  background: #d7b4fa;
+  display: inline-block;
+  position: absolute;
+  top: 32px;
+  border-radius: 8px;
+}
+
+main .sobre-mim-texto::before {
+  content: url("../img/detalhe.svg");
+  display: block;
+  z-index: -1;
+  position: absolute;
+  bottom: -15px;
+  right: -20px;
+}
+
+.estilo-paragrafo {
+  max-width: 65ch;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.7;
+  text-align: left;
+  margin: 0;
+  color: #444;
+}
+
+.sobre-mim-texto {
+  display: block;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 8px;
+  color: #222;
+  box-shadow: 0px 1px 3px #000000;
+  position: relative;
+  z-index: 2;
+  width: 600px;
+}
+
+main #sobre-mim .sobre-mim-texto h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+#sobre-mim span {
+  display: block;
+  font-size: 1.5em;
+  font-weight: 300;
+  color: #a5a5a5;
+  position: relative;
+}
+
+/* Tecnologias/Hard skills */
+
+.style-font {
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.375;
+  display: inline-block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  unicode-bidi: isolate;
+}
+#tecnologias {
+  background-color: #ffffff;
+  width: 100%;
+  margin: 0;
+  padding: 5em 0;
+}
+
+.tecnologias {
+  color: #3d3d3d;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-inline-start: 8em;
+}
+.tecnologias h3,
+.tecnologias h2 {
+  margin: 0;
+}
+
+.tecnologias-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 80px; /* Espaço entre as duas colunas */
+  flex-wrap: wrap;
+  padding: 0 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.tecnologias-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 10px 0;
+  max-width: 50ch;
+}
+
+.coluna-tecnologia {
+  position: relative;
+  flex: 1 1 0;
+  max-width: 420px;
+  color: #3d3d3d;
+}
+
+.coluna-tecnologia:first-child::after {
+  content: "";
+  position: absolute;
+  right: -40px;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 70%;
+  width: 1px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.coluna-tecnologia h3 {
+  font-size: 1.5em;
+  font-weight: 300;
+  margin-bottom: 0.5em;
+  margin-top: 0.2em;
+  margin-right: 0;
+  width: fit-content;
+}
+
+.style-tecnologias {
+  height: 40px;
+  list-style: none;
+  padding: 0 20px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #000000;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+.style-tecnologias:hover {
+  border-color: #d7b4fa;
+  transform: translateY(-5px);
+  box-shadow: 0 4px 5px rgba(215, 180, 250, 0.302);
+}
+
+.icone-titulo {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+/* ======================PROJECTS ======================= */
+
+/* Container que organiza Título vs Projetos */
+.layout-projetos {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 100%;
+  margin-top: 120px;
+}
+
+/* O título "PROJETOS" grande e vertical */
+.titulo-lateral {
+  font-size: 5em;
+  font-weight: 800;
+  color: #ffffff;
+  opacity: 0.1; /* Dá aquele efeito de fundo moderno */
+  writing-mode: vertical-rl; /* Gira o texto */
+  transform: rotate(180deg);
+  margin: 60px;
+  line-height: 1;
+}
+
+/* Grade de projetos */
+.lista-projetos {
+  display: flex;
+  flex-wrap: wrap; /* Faz os projetos pularem de linha se não couberem */
+  gap: 30px;
+  flex: 1;
+}
+
+/* Card individual do projeto */
+.card-projeto {
+  flex: 1 1 400px; /* Largura mínima de 400px */
+  max-width: 320px;
+  max-height: 580px;
+  background-color: #dddddd;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0px 1px 3px #000000;
+}
+
+.capa-projeto {
+  text-align: center;
+}
+
+.capa-projeto img {
+  width: 200px;
+  height: 200px;
+  border-radius: 12px;
+  border: 1px solid #333;
+  transition: transform 0.3s ease;
+}
+
+.capa-projeto img:hover {
+  transform: scale(1.02);
+  border-color: #d7b4fa; /* Roxo da sua identidade */
+}
+
+.info-projeto h3 {
+  font-size: 1em;
+  color: #222;
+  margin: 20px 0 10px 0;
+}
+
+/* Tags de linguagens (estilo o que você usou em Habilidades) */
+.tags-tecnologias {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.tags-tecnologias span {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.button {
+  background-color: #d7b4fa;
+  width: 100px;
+  height: 30px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3em;
+  text-decoration: none;
+  color: #222;
+  font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+  background-color: #b3b3b3;
+  color: #fff;
+  /* transform: scale(1); */
+}
+
+/* Estilo da Descrição */
+.descricao-projeto {
+  color: #222; /* Cinza claro para não brigar com o título */
+  font-size: 0.8rem;
+  font-weight: 300;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  max-width: 45ch; /* Limita a largura para melhor leitura */
+}
+
+/* Container dos Botões */
+.links-projeto {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+  align-items: center;
+}
+
+/* Botão Principal (Link do Projeto) */
+.btn-link {
+  background: #7f38c7;
+  background: linear-gradient(
+    0deg,
+    rgb(137, 79, 194) 0%,
+    rgb(166, 101, 231) 50%,
+    rgba(186, 121, 252, 0.85) 100%
+  );
+  border: none;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.btn-link:hover {
+  background-color: #c494f7;
+  transform: translateY(-2px);
+}
+
+/* Botão Secundário (GitHub) */
+.btn-github {
+  color: #222;
+  text-decoration: none;
+  font-size: 1.5em;
+  border-bottom: 1px solid transparent;
+  transition: border 0.3s ease;
+}
+
+.btn-github:hover {
+  border-bottom: 1px solid #d7b4fa;
+}
+
+.btn-ver-mais {
+  font-size: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+}
+
+.btn-ver-mais::before {
+  content: "";
+  width: 40px;
+  height: 3px;
+  background: #d7b4fa;
+  display: inline-block;
+  position: absolute;
+  bottom: -5px;
+  border-radius: 8px;
+}
+
+.container-ver-mais {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  width: 100%;
+  margin-top: 30px;
+  gap: 10px;
+}
+
+.icone-seta {
+  width: 40px;
+  height: 40px;
+  vertical-align: middle;
+  margin: 0;
+  transition: all 0.2s;
+}
+
+/* ===================CONTATO ================== */
+
+.container-contato {
+  background-color: #000000;
+  padding: 120px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.contato-info {
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 600;
+  list-style: none;
+  line-height: 1.5em;
+  text-wrap: wrap;
+}
+
+.container-contato h3 {
+  color: #969494;
+  max-width: 28ch;
+  font-weight: 300;
+  margin-left: 120px;
+}

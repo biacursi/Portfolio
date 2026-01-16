@@ -1,0 +1,260 @@
+/* =================== RESPONSIVIDADE CONSOLIDADA ================== */
+
+/* 1. TABLETS (Até 1024px) */
+@media screen and (max-width: 1200px) {
+  main #sobre-mim {
+    margin-inline: 8%; /* Aumentamos um pouco o respiro lateral */
+    gap: 3em;
+    align-items: center;
+  }
+
+  .sobre-mim-texto {
+    max-width: 100%;
+  }
+  main figure img {
+    width: 280px; /* Reduzimos um pouco o tamanho original (340px) */
+    height: 280px; /* Mantemos a mesma altura para ser um quadrado perfeito */
+    object-fit: cover; /* Mantém a proporção da foto, cortando levemente as sobras */
+    object-position: center; /* Garante que o foco seja no seu rosto */
+    border-radius: 12px; /* Mantém o estilo de borda do seu design original */
+    flex-shrink: 0; /* IMPORTANTE: impede que o flexbox "esmague" a imagem */
+  }
+
+  main figure p {
+    font-size: 1.5rem; /* Ajuste de fonte para acompanhar a redução da imagem */
+    max-width: none;
+  }
+}
+
+/* 2. TRANSIÇÃO E CELULARES GRANDES (Até 870px) */
+@media screen and (max-width: 780px) {
+  .header-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  main #sobre-mim {
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+  }
+
+  .detalhe {
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+    max-width: none;
+  }
+
+  figure {
+    align-items: center;
+    text-align: center;
+  }
+
+  .perfil-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sobre-mim-texto {
+    margin: auto;
+    max-width: 100%;
+    order: 3;
+  }
+
+  /* Projetos */
+  .layout-projetos {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .titulo-lateral {
+    writing-mode: horizontal-tb;
+    transform: rotate(0);
+    font-size: 3rem;
+    margin: 20px 0;
+  }
+  .container-contato {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .lista-projetos {
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 633px) {
+  .detalhe {
+    font-size: 1.5rem;
+  }
+  .detalhe::before {
+    display: none;
+  }
+
+  .sobre-mim-texto {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 689px) {
+  .card-projeto {
+    max-width: 500px !important;
+    justify-items: center;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  /* 1. Centraliza o container pai */
+  header h1 {
+    font-size: 1.5rem;
+  }
+  header nav ul {
+    gap: 10px;
+  }
+  header nav a {
+    font-size: 0.9rem;
+  }
+
+  #sobre-mim {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .sobre-mim-texto {
+    width: 350px;
+    height: 480px;
+  }
+
+  .estilo-paragrafo {
+    font-size: 0.8rem;
+    font-weight: 500;
+  }
+
+  .detalhe {
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+
+  /* 2. Centraliza a Figure e remove margens residuais */
+  main figure {
+    margin: 0 auto;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* 3. O FIM DO ACHATAMENTO */
+  main figure img {
+    width: 200px; /* Tamanho fixo para mobile */
+    height: 200px; /* Altura igual para ser um quadrado/círculo perfeito */
+    object-fit: cover; /* ESSA LINHA É A MÁGICA: mantém a proporção sem achatar */
+    border-radius: 50%; /* Sugestão de UI: fotos redondas centralizam melhor o olhar */
+    margin: 0 auto;
+  }
+
+  /* 4. Empilha os itens dentro do perfil */
+  .perfil-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  main figure p {
+    font-size: 1.1rem;
+    max-width: none;
+    text-align: center;
+  }
+
+  .layout-projetos {
+    padding: 0 20px !important;
+    width: 100%;
+    align-items: center;
+    margin-left: 50px;
+  }
+
+  .lista-projetos {
+    width: 50%;
+    gap: 20px;
+  }
+
+  .card-projeto {
+    width: 100% !important;
+    max-width: 100%; /* Card agora preenche o espaço com respiro */
+    padding: 20px;
+    margin: 0;
+    max-height: none; /* Deixa o card crescer com o texto */
+  }
+
+  /* Botões dentro do card */
+  .links-projeto {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .btn-link,
+  .btn-github {
+    width: 100% !important; /* Botão largo para facilitar o toque */
+    max-width: none;
+    height: auto;
+  }
+
+  .btn-link {
+    font-size: 20px;
+  }
+
+  .capa-projeto img {
+    display: none;
+  }
+
+  .btn-ver-mais {
+    font-size: 1.1rem;
+  }
+
+  .tecnologias-wrapper {
+    margin: 0 10px;
+    justify-content: flex-start;
+    gap: 40px;
+  }
+
+  .style-tecnologias {
+    font-size: 12px;
+  }
+
+  /* Contato */
+  .container-contato {
+    padding: 50px;
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+
+  .container-contato h3 {
+    margin-left: 0;
+    font-size: 1.1rem;
+  }
+
+  #contato {
+    align-items: flex-start;
+  }
+
+  .contato-info {
+    padding: 0;
+    font-size: 0.9rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .coluna-tecnologia {
+    flex: none;
+  }
+
+  @media screen and (max-width: 450px) {
+    .lista-projetos {
+      max-width: none;
+      width: 80%;
+    }
+  }
+}
