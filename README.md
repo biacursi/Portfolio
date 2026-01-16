@@ -8,7 +8,7 @@
   <p align="center">
     Uma experiência web estática, responsiva e acessível, desenhada para apresentar minha jornada em Front-End.
     <br />
-    <a href="https://biacursi.github.io/NOME-DO-SEU-REPOSITORIO/"><strong>🌐 Ver Projeto Online »</strong></a>
+    <a href="https://biacursi.github.io/Portfolio"><strong>🌐 Ver Projeto Online »</strong></a>
     <br />
     <br />
     <a href="#-tecnologias">Tecnologias</a> •
