@@ -218,6 +218,16 @@
 
   .btn-ver-mais {
     font-size: 1.1rem;
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 10px;
+  }
+
+  .btn-ver-mais::before {
+    display: none;
+  }
+
+  .container-ver-mais {
   }
 
   .tecnologias-wrapper {
@@ -255,6 +265,10 @@
   }
   .coluna-tecnologia {
     flex: none;
+  }
+
+  .icone-seta {
+    display: none;
   }
 
   @media screen and (max-width: 450px) {
