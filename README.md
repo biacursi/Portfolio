@@ -1,72 +1,71 @@
-<<<<<<< HEAD
-# Portfolio
-=======
-🚀 Portfólio Pessoal - Bianca Cursi
-Este é o repositório do meu portfólio pessoal, uma página web estática criada do zero para apresentar minhas habilidades, projetos e minha jornada na área de desenvolvimento Front-End.
+<div align="center">
+  <img src="https://img.shields.io/badge/Portfólio-Pessoal-8A2BE2?style=for-the-badge" alt="Badge Portfólio" />
+  <br />
+  <br />
 
-O projeto foi construído com foco em HTML semântico, CSS modularizado e design responsivo.
+  # 🚀 Portfólio Pessoal | Bianca Cursi
 
-💻 Visualização
-Você pode ver o projeto em ação clicando aqui!
+  <p align="center">
+    Uma experiência web estática, responsiva e acessível, desenhada para apresentar minha jornada em Front-End.
+    <br />
+    <a href="https://biacursi.github.io/NOME-DO-SEU-REPOSITORIO/"><strong>🌐 Ver Projeto Online »</strong></a>
+    <br />
+    <br />
+    <a href="#-tecnologias">Tecnologias</a> •
+    <a href="#-estrutura">Estrutura</a> •
+    <a href="#-instalação">Como Rodar</a>
+  </p>
+</div>
 
-Nota: Substitua o link https://biacursi.github.io/seu-repositorio/ pela URL real do seu GitHub Pages quando você publicar.
+---
 
-🌟 Principais Destaques
-Design Responsivo: A página se adapta perfeitamente a diferentes tamanhos de tela (desktop, tablet e mobile), utilizando Media Queries.
+## 🎨 Sobre o Projeto
 
-CSS Modularizado: O CSS não está em um único arquivo. Ele foi dividido em componentes (header.css, main.css, footer.css) para facilitar a manutenção, além de um reset.css dedicado.
+Este repositório hospeda meu portfólio pessoal construído **do zero**. O objetivo principal não foi apenas mostrar meus projetos, mas demonstrar domínio nos fundamentos do desenvolvimento web moderno: **HTML Semântico**, **Arquitetura CSS** e **Design Responsivo**.
 
-HTML5 Semântico: A estrutura do index.html utiliza tags semânticas como <main>, <section>, <article>, <aside>, <figure> e <footer> para melhor acessibilidade e SEO.
+> **Nota de Design:** O layout foi pensado seguindo princípios de UI, com foco na legibilidade (tipografia Montserrat) e micro-interações sutis.
 
-Interatividade: Efeitos de :hover sutis nos links, ícones e imagens para uma melhor experiência do usuário.
+### ✨ Destaques de UI/UX
 
-🛠️ Tecnologias Utilizadas
-HTML5
+* 📱 **Totalmente Responsivo:** Layout fluido que se adapta de desktops wide a dispositivos móveis (Mobile First mindset).
+* 🧱 **CSS Modular:** Adeus arquivos gigantes! O estilo foi componentizado (`header`, `main`, `footer`) para facilitar a escala.
+* ♿ **Acessibilidade (a11y):** Uso rigoroso de tags semânticas (`<nav>`, `<main>`, `<footer>`, `<section>`) para melhor SEO e leitura por screen readers.
+* ✨ **Micro-interações:** Efeitos de `hover` e transições suaves para uma navegação mais orgânica.
 
-CSS3
+---
 
-Flexbox
+## 🛠 Tecnologias
 
-Media Queries (para responsividade)
+<div align="left">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+  <img src="https://img.shields.io/badge/Flexbox-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white" />
+  <img src="https://img.shields.io/badge/Font_Awesome-339AF0?style=for-the-badge&logo=font-awesome&logoColor=white" />
+</div>
 
-Google Fonts (Montserrat)
+* **Tipografia:** [Montserrat](https://fonts.google.com/specimen/Montserrat) (Google Fonts).
+* **Ícones:** Font Awesome.
+* **Metodologia:** BEM (Block Element Modifier) *[Opcional: adicione se você usou]* ou CSS Modular.
 
-Font Awesome (Para os ícones de redes sociais)
+---
 
-📂 Estrutura de Arquivos
-O projeto foi organizado da seguinte maneira para manter o código limpo e escalável:
+## 📂 Arquitetura de Pastas
 
+A organização foi pensada para manter o código limpo e escalável:
+
+```bash
 portfolio-bianca/
 │
-├── 📄 index.html         (Arquivo principal da página)
+├── 📄 index.html        # Markup semântico principal
+├── 📄 reset.css         # Normalização entre navegadores
 │
-├── 📁 css/               (Pasta para todos os estilos)
-│   ├── 📄 reset.css      (Reseta os estilos padrão do navegador)
-│   ├── 📄 header.css     (Estilos exclusivos do cabeçalho)
-│   ├── 📄 main.css      (Estilos exclusivos do conteúdo principal)
-│   ├── 📄 footer.css    (Estilos exclusivos do rodapé)
-│   └── 📄 responsive.css  (Todos os @media queries para responsividade)
+├── 📁 css/              # Estilização Modular
+│   ├── 📄 header.css    # Navbar e Hero section
+│   ├── 📄 main.css      # Conteúdo, grids e seções
+│   ├── 📄 footer.css    # Rodapé e contatos
+│   └── 📄 responsive.css # Media Queries centralizadas
 │
-└── 📁 img/               (Pasta para todas as imagens)
+└── 📁 img/              # Assets otimizados
     ├── 🖼️ bianca.jpeg
-    ├── 🖼️ html.png
-    ├── 🖼️ css.png
-    └── ... (etc)
-
-🏁 Como Executar Localmente
-Por ser um projeto estático (HTML/CSS), não é necessária nenhuma instalação complexa:
-
-Clone este repositório:
-
-Bash
-
-git clone https://github.com/biacursi/NOME-DO-SEU-REPOSITORIO.git
-Navegue até a pasta do projeto:
-
-Bash
-
-cd NOME-DO-SEU-REPOSITORIO
-Abra o arquivo index.html no seu navegador.
-
-Feito com 💜 por © Bianca Marcelino Cursi, 2025.
->>>>>>> 073c12f (Primeiro commit do meu portfólio)
+    ├── 🖼️ tech-icons/
+    └── ...
