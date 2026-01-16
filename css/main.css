@@ -225,11 +225,11 @@ main #sobre-mim .sobre-mim-texto h2 {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  cursor: default;
 
   background-color: #000000;
   color: #fff;
   border-radius: 8px;
-  cursor: pointer;
   border: 2px solid transparent;
   transition: all 0.3s ease;
 }
@@ -242,7 +242,7 @@ main #sobre-mim .sobre-mim-texto h2 {
 .icone-titulo {
   width: 30px;
   height: 30px;
-  margin-left: 10px;
+  margin-left: 5px;
   vertical-align: middle;
 }
 
@@ -291,6 +291,8 @@ main #sobre-mim .sobre-mim-texto h2 {
 
 .capa-projeto {
   text-align: center;
+  justify-content: center;
+  display: flex;
 }
 
 .capa-projeto img {

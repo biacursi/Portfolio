@@ -28,5 +28,4 @@ a {
 
 img {
   max-width: 100%; /* Garante que nenhuma imagem estoure o layout */
-  display: block;
 }
