@@ -258,10 +258,11 @@
 
   .contato-info {
     padding: 0;
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     align-items: center;
     display: flex;
     flex-direction: column;
+    line-height: 1.7;
   }
   .coluna-tecnologia {
     flex: none;
