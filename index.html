@@ -236,7 +236,28 @@
             Feito com 💜 por &copy; Bianca Marcelino Cursi, 2025 - Alguns direitos reservados.
         </span>
     </footer>
+    <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">
+        <img src="/img/arrow-upward.svg" alt="Seta para cima" class="icon-seta">
+    </button>
 
+    <script>
+        const backToTopButton = document.querySelector("#backToTop");
+
+        window.addEventListener("scroll", () => {
+            if (window.scrollY > 300) {
+                backToTopButton.classList.add("show");
+            } else {
+                backToTopButton.classList.remove("show");
+            }
+        });
+
+        backToTopButton.addEventListener("click", () => {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        });
+    </script>
 
 </body>
 
