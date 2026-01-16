@@ -82,6 +82,25 @@
   .lista-projetos {
     gap: 10px;
   }
+
+  .back-to-top {
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .icon-seta {
+    width: 20px; /* Reduz a imagem proporcionalmente */
+    height: 20px;
+  }
+}
+/* Ajuste específico para evitar o "Safe Area" (Iphones novos/Androids sem borda) */
+@supports (padding-bottom: env(safe-area-inset-bottom)) {
+  .back-to-top {
+    bottom: calc(20px + env(safe-area-inset-bottom));
+  }
 }
 
 @media screen and (max-width: 633px) {
