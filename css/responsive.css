@@ -178,6 +178,14 @@
     gap: 20px;
   }
 
+  .info-projeto h3 {
+    font-size: 2em;
+  }
+
+  .descricao-projeto {
+    font-size: 0.9rem;
+  }
+
   .card-projeto {
     width: 100% !important;
     max-width: 100%; /* Card agora preenche o espaço com respiro */
