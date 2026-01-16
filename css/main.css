@@ -383,6 +383,7 @@ main #sobre-mim .sobre-mim-texto h2 {
   text-decoration: none;
   font-weight: 400;
   transition: background 0.3s ease;
+  box-shadow: 0px 1px 2px #000000;
 }
 
 .btn-link:hover {
