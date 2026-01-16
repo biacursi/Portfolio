@@ -381,7 +381,7 @@ main #sobre-mim .sobre-mim-texto h2 {
   padding: 5px 10px;
   border-radius: 6px;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 400;
   transition: background 0.3s ease;
 }
 
@@ -395,12 +395,12 @@ main #sobre-mim .sobre-mim-texto h2 {
   color: #222;
   text-decoration: none;
   font-size: 1.5em;
-  border-bottom: 1px solid transparent;
+  border-bottom: 2px solid transparent;
   transition: border 0.3s ease;
 }
 
 .btn-github:hover {
-  border-bottom: 1px solid #d7b4fa;
+  border-bottom: 2px solid #d7b4fa;
 }
 
 .btn-ver-mais {
