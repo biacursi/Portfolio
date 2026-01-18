@@ -76,6 +76,7 @@ main {
   width: 100%;
   min-height: 100vh;
   padding-bottom: 120px;
+  position: relative;
 }
 
 main #sobre-mim {
@@ -439,6 +440,7 @@ main #sobre-mim .sobre-mim-texto h2 {
   width: 100%;
   margin-top: 30px;
   gap: 10px;
+  margin-left: 80px;
 }
 
 .icone-seta {
