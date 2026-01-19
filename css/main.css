@@ -283,14 +283,14 @@ main #sobre-mim .sobre-mim-texto h2 {
 /* Grade de projetos */
 .lista-projetos {
   display: flex;
-  flex-wrap: wrap; /* Faz os projetos pularem de linha se não couberem */
+  flex-wrap: wrap;
   gap: 20px;
   justify-content: space-evenly;
 }
 
 /* Card individual do projeto */
 .card-projeto {
-  flex: 1 1 400px; /* Largura mínima de 400px */
+  flex: 1 1 400px;
   max-width: 320px;
   max-height: 580px;
   background-color: #dddddd;
@@ -362,7 +362,7 @@ main #sobre-mim .sobre-mim-texto h2 {
 
 /* Estilo da Descrição */
 .descricao-projeto {
-  color: #222; /* Cinza claro para não brigar com o título */
+  color: #222;
   font-size: 0.8rem;
   font-weight: 300;
   line-height: 1.6;
@@ -492,7 +492,7 @@ html {
   right: 30px;
   width: 50px;
   height: 50px;
-  background-color: #000; /* Cor de fundo do botão */
+  background-color: #222;
   border: none;
   border-radius: 50%;
   cursor: pointer;
@@ -513,7 +513,7 @@ html {
 }
 
 .icon-seta {
-  width: 24px; /* Ajuste o tamanho da sua imagem aqui */
+  width: 24px;
   height: 24px;
 }
 

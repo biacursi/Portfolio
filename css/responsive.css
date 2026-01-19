@@ -240,12 +240,11 @@
     gap: 10px;
   }
 
-  /* 3. O FIM DO ACHATAMENTO */
   main figure img {
-    width: 200px; /* Tamanho fixo para mobile */
-    height: 200px; /* Altura igual para ser um quadrado/círculo perfeito */
-    object-fit: cover; /* ESSA LINHA É A MÁGICA: mantém a proporção sem achatar */
-    border-radius: 50%; /* Sugestão de UI: fotos redondas centralizam melhor o olhar */
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
     margin: 0 auto;
   }
 
@@ -283,10 +282,10 @@
 
   .card-projeto {
     width: 100% !important;
-    max-width: 100%; /* Card agora preenche o espaço com respiro */
+    max-width: 100%;
     padding: 20px;
     margin: 0;
-    max-height: none; /* Deixa o card crescer com o texto */
+    max-height: none;
   }
 
   /* Botões dentro do card */
@@ -298,7 +297,7 @@
 
   .btn-link,
   .btn-github {
-    width: 100% !important; /* Botão largo para facilitar o toque */
+    width: 100% !important;
     max-width: none;
     height: auto;
   }
