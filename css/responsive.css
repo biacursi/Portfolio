@@ -110,10 +110,15 @@
     align-items: center;
     padding: 60px 20px;
     margin-inline: 0;
+    gap: 2em;
   }
 
   .sobre-mim-texto {
     width: auto;
+  }
+
+  .container-index {
+    padding-bottom: 0px;
   }
 
   main figure {
@@ -334,6 +339,9 @@
 
   .icone-seta {
     display: none;
+  }
+  .contato-info li {
+    font-size: 1.2rem;
   }
 
   @media screen and (max-width: 450px) {
