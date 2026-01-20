@@ -311,7 +311,7 @@
     padding: 10px;
   }
   .container-ver-mais {
-    margin-left: 60px;
+    margin-left: 120px;
   }
 
   .btn-ver-mais::before {
@@ -343,6 +343,9 @@
     .lista-projetos {
       max-width: none;
       width: 80%;
+    }
+    .container-ver-mais {
+      margin-left: 60px;
     }
   }
 }
