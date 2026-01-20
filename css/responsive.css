@@ -63,7 +63,6 @@
 
   main #sobre-mim {
     grid-template-columns: 1fr 1.2fr;
-    row-gap: 40px;
     justify-items: center;
     text-align: center;
     padding-top: 60px;
@@ -111,7 +110,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 60px;
     padding: 60px 20px;
     margin-inline: 0;
   }
@@ -241,8 +239,6 @@
   }
 
   main figure img {
-    width: 200px;
-    height: 200px;
     object-fit: cover;
     border-radius: 50%;
     margin: 0 auto;
