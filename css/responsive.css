@@ -19,8 +19,6 @@
     padding: 20px;
   }
   main figure img {
-    width: 280px;
-    height: 280px;
     object-fit: cover;
     object-position: center;
     border-radius: 12px;
