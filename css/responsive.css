@@ -316,6 +316,9 @@
     border-radius: 8px;
     padding: 10px;
   }
+  .container-ver-mais {
+    margin-left: 60px;
+  }
 
   .btn-ver-mais::before {
     display: none;
