@@ -243,7 +243,6 @@
 
   main figure img {
     object-fit: cover;
-    border-radius: 50%;
     margin: 0 auto;
   }
 
