@@ -110,7 +110,6 @@
     align-items: center;
     padding: 60px 20px;
     margin-inline: 0;
-    gap: 2em;
   }
 
   .sobre-mim-texto {
@@ -182,10 +181,7 @@
 
 @media screen and (max-width: 633px) {
   .detalhe {
-    font-size: 1.8rem;
-  }
-  .detalhe::before {
-    display: none;
+    font-size: 2.5rem;
   }
 
   .sobre-mim-texto {
