@@ -88,8 +88,9 @@ main #sobre-mim {
   column-gap: 160px;
   row-gap: 20px;
   align-items: start;
-  margin-inline: 15%;
+  margin: 0 auto;
   padding-top: 100px;
+  max-width: 1200px;
 }
 
 #sobre-mim span::before {
@@ -191,6 +192,8 @@ main #sobre-mim .sobre-mim-texto h2 {
   padding: 0 20px;
   width: 100%;
   box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .tecnologias-container {
@@ -487,7 +490,8 @@ main #sobre-mim .sobre-mim-texto h2 {
   color: #969494;
   max-width: 28ch;
   font-weight: 300;
-  margin-left: 120px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .icons-contato {
