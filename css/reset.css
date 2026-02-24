@@ -14,8 +14,6 @@ html {
 body {
   width: 100%;
   min-height: 100vh; /* Mudança de height para min-height para aceitar scroll */
-  background-color: #444;
-  color: #fff;
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
@@ -23,9 +21,24 @@ body {
 
 a {
   text-decoration: none;
-  color: inherit; /* Herda a cor do pai para facilitar o estilo */
+  color: inherit;
 }
 
 img {
-  max-width: 100%; /* Garante que nenhuma imagem estoure o layout */
+  max-width: 100%;
+}
+
+/* Remove o contorno de foco que alguns navegadores colocam */
+nav a:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+/* Garante que o overlay não capture cliques enquanto estiver invisível */
+.menu-overlay {
+  pointer-events: none;
+}
+
+.menu-overlay.active {
+  pointer-events: auto;
 }

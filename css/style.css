@@ -1,0 +1,17 @@
+/* Main */
+@import "./main.css";
+
+/* global */
+@import "./reset.css";
+
+/* Header */
+@import "./header.css";
+
+/* Footer */
+@import "./footer.css";
+
+/* Scroll */
+@import "./scroll.css";
+
+/* Responsividade */
+@import "./responsive.css";

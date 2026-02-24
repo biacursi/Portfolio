@@ -6,13 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./img/favicon.svg">
     <title>Bianca Cursi | Front-end & UX/UI Designer</title>
-    <meta name="description" content="Desenvolvedora Front-end e UX/UI designer. Localizada em Guarulhos/SP">
+    <meta name="description" content="Desenvolvedora Front-end e UX/UI designer. Localizada em Barueri/SP">
 
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,200&display=swap" rel="stylesheet">
@@ -28,24 +24,23 @@
 </head>
 
 <body>
+    <div class="menu-overlay"></div>
     <header>
 
         <div class="header-container">
             <h1>Bianca Marcelino Cursi</h1>
-            <nav>
+            <button class="hamburger" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav-menu">
                 <ul>
-                    <li>
-                        <a href="https://github.com/biacursi" target="_blank" title="botão GitHub">GitHub</a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/bianca-marcelino-cursii/" target="_blank" title="botão LinkedIn">LinkedIn</a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/biacursi/" target="_blank" title="botão Instagram">Instagram</a>
-                    </li>
-                    <li>
-                        <a class="button-nav" href="#contato" title="botão contato">Contato</a>
-                    </li>
+                    <li><a href="#sobre-mim">Sobre</a></li>
+                    <li><a href="#tecnologias">Skills</a></li>
+                    <li><a href="#secao-projetos">Projetos</a></li>
+                    <li><a href="#contato" class="button-nav">Contato</a></li>
                 </ul>
             </nav>
         </div>
@@ -55,165 +50,124 @@
     <main>
         <div class="container-index">
             <section id="sobre-mim">
-                <h2 class="detalhe">Desenvolvedora Front-end & UI designer.</h2>
-                <figure>
-                    <div class="perfil-container">
-                        <img src="./img/Bianca-3.png" alt="Imagem da Bianca, mulher morena dos cabelos cacheados" width="394" height="380">
-                        <p>Em transição de carreira.</p>
+                <h1 class="titulo-hero">Desenvolvedora Front-end <br> & UI Designer <span>.</span></h1>
+
+                <figure class="coluna-perfil">
+                    <div class="perfil-imagem-wrapper">
+                        <img src="./img/Bianca-br.png" alt="Foto da Bianca" class="foto-perfil">
+                        <p class="status-transicao">Em transição de carreira</p>
                     </div>
-                    <span>Localizada em Guarulhos/SP ✈️</span>
+                    <span class="localizacao">Barueri, SP 📍</span>
                 </figure>
-                <div class="sobre-mim-texto">
-                    <h2>🙋🏻‍♀️ SOBRE MIM</h2>
-                    <p class="estilo-paragrafo">
-                        Olá, sou a Bianca (ou Bia), tenho 28 anos e moro em Guarulhos/SP. Depois de uma boa caminhada na área administrativa, decidi virar o jogo e mergulhar no universo da tecnologia, e não poderia estar mais empolgada!
-                        Hoje sou desenvolvedora Front-End júnior em formação, com conhecimento em HTML, CSS, JavaScript e APIs REST, e estou dando meus primeiros passos com jQuery e Figma.
-                        Meu próximo desafio? Aprender React e expandir ainda mais meu repertório técnico. Gosto de ambientes colaborativos, códigos limpos e interfaces que fazem sentido para quem usa.
-                        Ah, e um bom café sempre acompanha meus momentos de foco! Bora codar? 🚀💻✨
-                    </p>
-                </div>
+
+                <article class=" hidden-off">
+                    <div class="sobre-mim-texto">
+                        <h2 class="subtitulo-sessao">SOBRE MIM</h2>
+                        <div class="conteudo-bio">
+                            <p>
+                                Olá, sou a <strong>Bianca (ou Bia)</strong>, tenho 28 anos e moro em Barueri/SP. Depois de uma boa caminhada na área administrativa, decidi virar o jogo e mergulhar no universo da tecnologia.
+                            </p>
+                            <p>
+                                Hoje sou desenvolvedora Front-End júnior em transição, com foco em <strong>HTML, CSS, JavaScript e APIs REST</strong>. Vou começar a explorar React para expandir meu repertório técnico.
+                            </p>
+                            <p>
+                                Gosto de ambientes colaborativos, códigos limpos e interfaces que fazem sentido. Um bom café sempre acompanha meus momentos de foco. <strong>Bora codar? 🚀💻</strong>
+                            </p>
+                        </div>
+                    </div>
+                </article>
             </section>
         </div>
 
-        <section id="tecnologias">
-            <div class="tecnologias-wrapper">
+        <article class="hidden-off delay-1">
+            <section id="tecnologias">
+                <div class="tecnologias-wrapper">
+                    <div class="coluna-tecnologia">
+                        <h2 class="style-font">HABILIDADES & TÉCNICAS
+                            <img src="./img/dev-vector.svg" alt="Ícone de Tecnologia" class="icone-titulo" width="40" height="40">
+                        </h2>
+                        <h3>Front-End</h3>
+                        <div class="tecnologias-container">
+                            <span class="style-tecnologias">HTML5</span>
+                            <span class="style-tecnologias">CSS3</span>
+                            <span class="style-tecnologias">JavaScript (em andamento)</span>
+                            <span class="style-tecnologias">Responsividade</span>
+                            <span class="style-tecnologias">Acessibilidade</span>
 
-                <div class="coluna-tecnologia">
-                    <h2 class="style-font">HABILIDADES & TÉCNICAS
-                        <img src="./img/dev-vector.svg" alt="Ícone de Tecnologia" class="icone-titulo" width="40" height="40">
-                    </h2>
-                    <h3>Front-End</h3>
-                    <div class="tecnologias-container">
-                        <span class="style-tecnologias">HTML5</span>
-                        <span class="style-tecnologias">CSS3</span>
-                        <span class="style-tecnologias">JavaScript (em andamento)</span>
-                        <span class="style-tecnologias">Responsividade</span>
-                        <span class="style-tecnologias">Acessibilidade</span>
+                        </div>
+                    </div>
 
+                    <div class="coluna-tecnologia">
+                        <h2 class="style-font">FERRAMENTAS & OUTROS
+                            <img src="./img/construction-vector.svg" alt="Ícone de Tecnologia" class="icone-titulo" width="40" height="40">
+                        </h2>
+                        <h3>Versionamento & Design</h3>
+                        <div class="tecnologias-container">
+                            <span class="style-tecnologias">GitHub</span>
+                            <span class="style-tecnologias">Git</span>
+                            <span class="style-tecnologias">Figma</span>
+                        </div>
                     </div>
                 </div>
+            </section>
+        </article>
 
-                <div class="coluna-tecnologia">
-                    <h2 class="style-font">FERRAMENTAS & OUTROS
-                        <img src="./img/construction-vector.svg" alt="Ícone de Tecnologia" class="icone-titulo" width="40" height="40">
-                    </h2>
-                    <h3>Versionamento & Design</h3>
-                    <div class="tecnologias-container">
-                        <span class="style-tecnologias">GitHub</span>
-                        <span class="style-tecnologias">Git</span>
-                        <span class="style-tecnologias">Figma</span>
-                    </div>
-                </div>
-
+        <section id="secao-projetos">
+            <div class="projetos-header">
+                <span class="subtitulo-roxo">MEU TRABALHO</span>
+                <h2 class="titulo-sessao">Projetos em Destaque</h2>
             </div>
-        </section>
 
-        <section id="secao-projetos" class="container-index">
-            <div class="layout-projetos">
-                <h2 class="titulo-lateral">PROJETOS</h2>
-
+            <article class=" hidden-off delay-2">
                 <div class="lista-projetos">
-
                     <article class="card-projeto">
-                        <div class="capa-projeto">
-                            <img src="./img/DevConverter.png" alt="Print do Projeto Dev Converter" width="544" height="459">
+                        <div class="projeto-imagem">
+                            <img src="./img/DevConverter.png" alt="Dev Converter">
+                            <div class="overlay-links">
+                                <a href="https://biacursi.github.io/DevConverter/" target="_blank" class="btn-glass">Ver Demo</a>
+                                <a href="https://github.com/biacursi/DevConverter" target="_blank" class="btn-outline">GitHub</a>
+                            </div>
                         </div>
-                        <div class="info-projeto">
+                        <div class="projeto-info">
+                            <div class="tags-mini">
+                                <span>JS Puro</span>
+                                <span>API</span>
+                            </div>
                             <h3>Dev Converter</h3>
-                            <p class="descricao-projeto">
-                                Conversor de Moedas Estático.
-                                Este é um projeto front-end de um conversor de moedas simples, que converte valores de Real (BRL) para 5 moedas estrangeiras.
-                                Ferramentas: HTML, CSS, Javascript puro e manipulação do DOM.
-                            </p>
-                            <div class="tags-tecnologias">
-                                <span>HTML5</span>
-                                <span>CSS3</span>
-                                <span>JavaScript</span>
-                                <span>API</span>
-                                <span>DOM</span>
-                            </div>
-                            <div class="links-projeto">
-                                <a href="https://biacursi.github.io/DevConverter/" target="_blank" class="btn-link" title="botão para ver projeto">Ver Projeto</a>
-                                <a href="https://github.com/biacursi/DevConverter" target="_blank" class="btn-github" title="botão github">GitHub</a>
-                            </div>
+                            <p>Conversor de moedas estático com manipulação de DOM e integração de API.</p>
                         </div>
                     </article>
 
                     <article class="card-projeto">
-                        <div class="capa-projeto">
-                            <img src="./img/FoneFake.png" alt="Print do Projeto Fone Fake" width="437" height="437">
+                        <div class="projeto-imagem">
+                            <img src="./img/FoneFake.png" alt="Fone Fake">
+                            <div class="overlay-links">
+                                <a href="https://biacursi.github.io/FoneFake/" target="_blank" class="btn-glass">Ver Demo</a>
+                                <a href="https://github.com/biacursi/FoneFake" target="_blank" class="btn-outline">GitHub</a>
+                            </div>
                         </div>
-                        <div class="info-projeto">
+                        <div class="projeto-info">
+                            <div class="tags-mini">
+                                <span>HTML/CSS</span>
+                                <span>Landing Page</span>
+                            </div>
                             <h3>Fone Fake</h3>
-                            <p class="descricao-projeto">
-                                Este é um projeto de landing page estática para um produto fictício. O objetivo foi criar uma página de vendas (One-Page) atraente, moderna e responsiva, utilizando apenas HTML5 e CSS3.
-                            </p>
-                            <div class="tags-tecnologias">
-                                <span>HTML5</span>
-                                <span>CSS3</span>
-                            </div>
-                            <div class="links-projeto">
-                                <a href="https://biacursi.github.io/FoneFake/" target="_blank" class="btn-link" title="botão para ver projeto">Ver Projeto</a>
-                                <a href="https://github.com/biacursi/FoneFake" target="_blank" class="btn-github" title="botão github">GitHub</a>
-                            </div>
+                            <p>Landing page moderna focada em conversão e design responsivo.</p>
                         </div>
                     </article>
-
-                    <article class="card-projeto">
-                        <div class="capa-projeto">
-                            <img src="./img/GeradorSenha.png" alt="Print do Projeto Gerador de Senhas" width="346" height="282">
-                        </div>
-                        <div class="info-projeto">
-                            <h3>Gerador de senhas</h3>
-                            <p class="descricao-projeto">
-                                Um simples gerador de senhas front-end que consome uma API externa para buscar senhas aleatórias e seguras, permitindo também a cópia fácil para a área de transferência.
-                            </p>
-                            <div class="tags-tecnologias">
-                                <span>HTML5</span>
-                                <span>CSS3</span>
-                                <span>JavaScript</span>
-                                <span>API</span>
-                                <span>DOM</span>
-                            </div>
-                            <div class="links-projeto">
-                                <a href="https://biacursi.github.io/Gerador-senha/" target="_blank" class="btn-link" title="botão para ver projeto">Ver Projeto</a>
-                                <a href="https://github.com/biacursi/Gerador-senha" target="_blank" class="btn-github" title="botão github">GitHub</a>
-                            </div>
-                        </div>
-                    </article>
-                    <article class="card-projeto">
-                        <div class="capa-projeto">
-                            <img src="./img/consultacep.png" alt="Print do Projeto Consulta CEP" width="263" height="263">
-                        </div>
-                        <div class="info-projeto">
-                            <h3>Consulta CEP</h3>
-                            <p class="descricao-projeto">
-                                Este projeto é uma aplicação web simples que permite ao usuário buscar informações de endereço a partir de um CEP válido. O objetivo principal é demonstrar o consumo de APIs externas e manipulação do DOM com JavaScript.
-                            </p>
-                            <div class="tags-tecnologias">
-                                <span>HTML5</span>
-                                <span>CSS3</span>
-                                <span>JavaScript</span>
-                                <span>API</span>
-                                <span>DOM</span>
-                            </div>
-                            <div class="links-projeto">
-                                <a href="https://biacursi.github.io/consulta-CEP/" target="_blank" class="btn-link" title="botão para ver projeto">Ver Projeto</a>
-                                <a href="https://github.com/biacursi/FoneFake" target="_blank" class="btn-github" title="botão github">GitHub</a>
-                            </div>
-                        </div>
-                    </article>
-                    <div class="container-ver-mais">
-                        <a href="https://github.com/biacursi" target="_blank" class="btn-ver-mais" title="botão para ver mais projetos">VER MAIS PROJETOS</a>
-                        <img src="./img/arrow.svg" alt="seta" class="icone-seta" width="24" height="24">
-                    </div>
-
 
                 </div>
+            </article>
+
+            <div class="ver-mais-minimalista">
+                <a href="https://github.com/biacursi" target="_blank">
+                    Explorar mais no GitHub
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7" />
+                    </svg>
+                </a>
             </div>
         </section>
-
-
 
         <section class="container-contato">
             <h3>Estou disponível para novos projetos no momento.<br>
@@ -254,6 +208,7 @@
     </button>
 
     <script>
+        // 1. BOTÃO VOLTAR AO TOPO
         const backToTopButton = document.querySelector("#backToTop");
 
         window.addEventListener("scroll", () => {
@@ -265,10 +220,48 @@
         });
 
         backToTopButton.addEventListener("click", () => {
-            window.scrollTo({
-                top: 0,
-                behavior: "smooth"
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+
+        // 2. ANIMAÇÃO DE APARECER (INTERSECTION OBSERVER)
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show-on');
+                }
             });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.hidden-off').forEach((el) => observer.observe(el));
+
+        // 3. MENU HAMBÚRGUER E OVERLAY
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+        const overlay = document.querySelector(".menu-overlay");
+
+        // Função para abrir/fechar
+        const toggleMenu = () => {
+            const isOpening = !navMenu.classList.contains("active");
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+            overlay.classList.toggle("active");
+            document.body.style.overflow = isOpening ? "hidden" : "initial";
+        };
+
+        // Função específica para FECHAR (limpa o blur na hora)
+        const closeMenu = () => {
+            hamburger.classList.remove("active");
+            navMenu.classList.remove("active");
+            overlay.classList.remove("active");
+            document.body.style.overflow = "initial";
+        };
+
+        hamburger.addEventListener("click", toggleMenu);
+        overlay.addEventListener("click", closeMenu);
+
+        // Ao clicar em qualquer link do menu, ele fecha tudo IMEDIATAMENTE
+        document.querySelectorAll(".nav-menu a").forEach(link => {
+            link.addEventListener("click", closeMenu);
         });
     </script>
 

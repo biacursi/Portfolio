@@ -1,48 +1,66 @@
 header {
-  background-color: #222;
+  background-color: #ffffff;
   width: 100%;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-  position: sticky; /* Opcional: mantém o menu sempre no topo */
+  position: sticky;
   top: 0;
   z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
 
 .header-container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 15px 25px;
+  padding: 10px 25px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 header h1 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 700;
+  color: #1a1a1a;
+  white-space: nowrap;
 }
 
 header h1,
 nav a {
-  background: linear-gradient(0deg, #894fc2 0%, #ba79fc 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
   cursor: pointer;
-  transition: 0.3s;
 }
 
-header h1:hover {
-  background: #fff;
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+.header-container a {
+  display: inline-block;
+  padding: 16px 0px;
+  position: relative;
+}
+
+.header-container li:not(:last-of-type) a {
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.header-container li:not(:last-child) a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #894fc2;
+  transition: 0.3s ease-in-out;
+}
+
+.header-container li:not(:last-child) a:hover::after {
+  width: 100%;
 }
 
 header nav ul {
   display: flex;
   list-style: none;
-  gap: 1.5rem;
+  gap: 2rem;
   align-items: center;
 }
 
@@ -50,18 +68,22 @@ header nav a {
   font-size: 1.1rem;
 }
 
-header nav a:hover {
-  color: #fff;
-}
-
 .button-nav {
-  background: linear-gradient(0deg, #894fc2 0%, #ba79fc 100%);
-  padding: 8px 18px;
-  border-radius: 6px;
-  color: #fff !important;
+  font-size: 16px;
+  padding: 10px 30px !important;
+  border: 1.5px solid transparent;
+  border-radius: 50px;
+  background:
+    linear-gradient(white, white) padding-box,
+    linear-gradient(to right, #894fc2, #eee, #fff) border-box;
+
+  /* Transição suave para o hover */
+  transition: all 0.3s ease;
 }
 
 .button-nav:hover {
-  transform: scale(1.05);
-  filter: brightness(1.2);
+  background:
+    linear-gradient(white, white) padding-box,
+    linear-gradient(to right, #622f94, #894fc2, #eee) border-box;
+  transform: translateY(-1px);
 }

@@ -1,354 +1,168 @@
-/* =================== RESPONSIVIDADE CONSOLIDADA ================== */
-
-@media screen and (max-width: 1257px) {
-  .lista-projetos {
-    justify-content: space-evenly;
-  }
-  .card-projeto {
-    justify-items: center;
-  }
-  .sobre-mim-texto {
-    width: 500px;
-  }
-}
-/* 1. TABLETS (Até 1024px) */
-@media screen and (max-width: 1200px) {
-  .sobre-mim-texto {
-    max-width: 100%;
-    width: auto;
-    padding: 20px;
-  }
-  main figure img {
-    object-fit: cover;
-    object-position: center;
-    border-radius: 12px;
-    flex-shrink: 0;
-  }
-
-  main figure {
-    margin-left: 0;
-  }
-
-  main figure p {
-    font-size: 1.5rem;
-    max-width: none;
-  }
-
-  /* Contato */
-  .container-contato {
-    padding: 50px;
-    text-align: left;
-    justify-items: center;
-  }
-
-  .container-contato h3 {
-    margin-left: 0;
-    font-size: 1.1rem;
-  }
-
-  #contato {
-    align-items: flex-start;
-  }
-
-  .contato-info {
-    padding: 0;
-    font-size: 1.5rem;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    line-height: 1.7;
-  }
-
-  main #sobre-mim {
-    grid-template-columns: 1fr 1.2fr;
-    justify-items: center;
-    text-align: center;
-    padding-top: 60px;
-    margin-inline: 5%;
-    gap: 20px !important;
-  }
-
-  .detalhe {
-    text-align: center;
-    margin: 0 auto;
-  }
-
-  .detalhe::before {
-    left: 0;
-  }
-
-  figure {
-    align-items: center;
-    text-align: center;
-  }
-
-  .perfil-container {
-    justify-content: center;
-  }
-
-  .sobre-mim-texto {
-    padding: 30px 20px;
-  }
-}
-@media screen and (max-width: 1000px) {
-  .sobre-mim-texto {
-    width: 300px;
-  }
-  .estilo-paragrafo {
-    font-size: 0.8rem;
-  }
+/* =================== ELEMENTOS GLOBAIS DO MENU ================== */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+  z-index: 1100;
+  padding: 10px;
 }
 
-@media screen and (max-width: 780px) {
-  .header-container {
-    flex-direction: column;
-    gap: 15px;
-  }
-  main #sobre-mim {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 60px 20px;
-    margin-inline: 0;
-  }
-
-  .sobre-mim-texto {
-    width: auto;
-  }
-
-  .container-index {
-    padding-bottom: 0px;
-  }
-
-  main figure {
-    margin-left: 0;
-    align-items: center;
-    text-align: center;
-  }
-  .perfil-container {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    margin-top: 0;
-  }
-
-  .estilo-paragrafo {
-    font-size: 1rem;
-  }
-
-  /* Projetos */
-  .layout-projetos {
-    flex-direction: column;
-    align-items: center;
-    padding: 0 20px;
-    margin: 60px;
-  }
-
-  .titulo-lateral {
-    writing-mode: horizontal-tb;
-    transform: rotate(0);
-    font-size: 3rem;
-    margin: 20px 0;
-  }
-  .container-contato {
-    grid-template-columns: 1fr;
-    padding: 20px;
-  }
-
-  .lista-projetos {
-    gap: 10px;
-  }
-
-  .back-to-top {
-    bottom: 20px;
-    right: 20px;
-    width: 45px;
-    height: 45px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  }
-
-  .icon-seta {
-    width: 20px; /* Reduz a imagem proporcionalmente */
-    height: 20px;
-  }
-}
-/* Ajuste específico para evitar o "Safe Area" (Iphones novos/Androids sem borda) */
-@supports (padding-bottom: env(safe-area-inset-bottom)) {
-  .back-to-top {
-    bottom: calc(20px + env(safe-area-inset-bottom));
-  }
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #1a1a1a;
+  margin: 5px 0;
+  transition: 0.4s;
 }
 
-@media screen and (max-width: 633px) {
-  .detalhe {
-    font-size: 2.5rem;
-  }
-
-  .sobre-mim-texto {
-    width: 500px;
-  }
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
 }
 
-@media screen and (max-width: 689px) {
-  .card-projeto {
-    max-width: 500px !important;
-    justify-items: center;
-  }
+.menu-overlay.active {
+  opacity: 1;
+  visibility: visible;
 }
 
-@media screen and (max-width: 520px) {
-  /* 1. Centraliza o container pai */
-  header h1 {
-    font-size: 1.5rem;
-  }
-  header nav ul {
-    gap: 10px;
-  }
-  header nav a {
-    font-size: 0.9rem;
-  }
-
+/* =================== TABLETS (1024px) ================== */
+@media screen and (max-width: 1024px) {
   #sobre-mim {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    grid-template-columns: 1fr;
+    grid-template-areas: "titulo" "foto" "texto";
     text-align: center;
     padding: 40px 20px;
   }
-
-  .sobre-mim-texto {
-    width: 90%;
-    max-width: 380px;
-    height: 420px;
-    padding: 30px 20px;
+  .coluna-perfil {
+    max-width: 300px;
     margin: 0 auto;
   }
+  .status-transicao {
+    border-left: none;
+    border-top: 3px solid #894fc2;
+    padding: 10px 0 0 0;
+  }
+}
 
-  .estilo-paragrafo {
-    font-size: 0.8rem;
-    line-height: 1.6;
-    max-width: 100%;
+/* =================== MOBILE GERAL (768px) ================== */
+@media screen and (max-width: 768px) {
+  /* Menu Hamburger */
+  .hamburger {
+    display: block;
   }
 
-  /* 2. Centraliza a Figure e remove margens residuais */
-  main figure {
-    margin: 0 auto;
-    align-items: center;
-    gap: 10px;
-  }
-
-  main figure img {
-    object-fit: cover;
-    margin: 0 auto;
-  }
-
-  /* 4. Empilha os itens dentro do perfil */
-  .perfil-container {
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background-color: #ffffff;
+    padding: 100px 40px;
+    transition: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1000;
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 15px;
   }
 
-  main figure p {
-    font-size: 1.1rem;
-    max-width: none;
-    text-align: center;
+  .nav-menu.active {
+    right: 0;
   }
 
-  .layout-projetos {
-    padding: 0 20px !important;
+  header nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+  }
+
+  header nav a {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #1a1a1a;
+  }
+
+  /* Destaque para o link de Contato no menu aberto */
+  .nav-menu .button-nav {
     width: 100%;
-    align-items: center;
-    margin: 50px;
+    text-align: center;
+    background: #894fc2;
+    color: white !important;
+    border-radius: 12px;
+  }
+
+  /* Animação Hamburger */
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  /* Layout */
+  .header-container {
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    padding: 15px 20px;
+  }
+  .titulo-hero {
+    font-size: 2.2rem;
+    text-align: center;
+    margin: 0 auto 20px auto;
+  }
+  .titulo-hero::before {
+    display: none;
   }
 
   .lista-projetos {
-    gap: 20px;
+    grid-template-columns: 1fr;
   }
-
-  .info-projeto h3 {
-    font-size: 2em;
+  .contato-info {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
   }
+}
 
-  .descricao-projeto {
+/* =================== CELULARES PEQUENOS (480px) ================== */
+@media screen and (max-width: 480px) {
+  .titulo-hero {
+    font-size: 1.8rem;
+  }
+  .conteudo-bio p {
     font-size: 0.9rem;
+    text-align: left;
   }
-
-  .card-projeto {
-    width: 100% !important;
-    max-width: 100%;
-    padding: 20px;
-    margin: 0;
-    max-height: none;
+  .nav-menu {
+    width: 85%;
   }
-
-  /* Botões dentro do card */
-  .links-projeto {
+  .contato-info {
     flex-direction: column;
-    width: 100%;
-    text-align: center;
+    align-items: center;
   }
 
-  .btn-link,
-  .btn-github {
-    width: 100% !important;
-    max-width: none;
-    height: auto;
+  .back-to-top {
+    width: 45px;
+    height: 45px;
+    right: 15px;
+    bottom: 15px;
   }
+}
 
-  .btn-link {
-    font-size: 20px;
-  }
-
-  .capa-projeto img {
-    display: none;
-  }
-
-  .btn-ver-mais {
-    font-size: 1rem;
-    border: 2px solid;
-    border-radius: 8px;
-    padding: 10px;
-    text-align: center;
-    box-shadow: 0px 1px 3px #000000;
-  }
-  .container-ver-mais {
-    max-width: 100%;
-    margin: 0 auto;
-  }
-
-  .btn-ver-mais::before {
-    display: none;
-  }
-
-  .tecnologias-wrapper {
-    margin: 0 10px;
-    justify-content: flex-start;
-    gap: 40px;
-  }
-
-  .style-tecnologias {
-    font-size: 12px;
-  }
-
-  .coluna-tecnologia {
-    flex: none;
-  }
-
-  .icone-seta {
-    display: none;
-  }
-  .contato-info li {
-    font-size: 1.2rem;
-  }
-
-  @media screen and (max-width: 450px) {
-    .lista-projetos {
-      max-width: none;
-      width: 80%;
-    }
-    .btn-ver-mais {
-      font-size: 0.8rem;
-    }
+@supports (padding-bottom: env(safe-area-inset-bottom)) {
+  footer {
+    padding-bottom: calc(40px + env(safe-area-inset-bottom));
   }
 }
