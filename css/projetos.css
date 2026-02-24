@@ -42,7 +42,7 @@
 
 .card-projeto:hover {
   transform: translateY(-10px);
-  box-shadow: 0 2px 16px rgba(137, 79, 194, 0.1);
+  box-shadow: 0 10px 16px rgba(137, 79, 194, 0.1);
   border-color: rgba(137, 79, 194, 0.3);
 }
 
@@ -71,7 +71,7 @@
   justify-content: center;
   align-items: center;
   gap: 15px;
-  opacity: 0; /* Escondido por padrão */
+  opacity: 0;
   transition: 0.4s ease;
   backdrop-filter: blur(4px);
 }

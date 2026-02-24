@@ -149,7 +149,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 10px 20px rgba(137, 79, 194, 0.3);
+  box-shadow: 0 2px 10px rgba(137, 79, 194, 0.3);
   transition: all 0.3s;
   opacity: 0;
   visibility: hidden;
