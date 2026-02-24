@@ -2,6 +2,11 @@
 
 .container-contato {
   background-color: #120a1a;
+  background: linear-gradient(
+    180deg,
+    rgba(18, 10, 26, 1) 30%,
+    rgb(53, 30, 75) 90%
+  );
   padding: 100px 20px;
   display: flex;
   flex-direction: column;
@@ -41,7 +46,7 @@
 }
 
 .contato-info a {
-  color: #a6a6a6;
+  color: #b3b3b3;
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: 400;

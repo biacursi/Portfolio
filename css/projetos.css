@@ -4,6 +4,19 @@
   padding: 100px 20px;
   max-width: 1200px;
   margin: 0 auto;
+  position: relative;
+}
+
+#secao-projetos::after {
+  content: "";
+  position: absolute;
+  background: url(../img/detalhe-top-left.svg);
+  top: 60px;
+  left: -120px;
+  width: 52px;
+  height: 52px;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .projetos-header {
