@@ -1,0 +1,97 @@
+/* Tecnologias/Hard skills */
+
+.style-font {
+  font-size: 1rem;
+  letter-spacing: 2px;
+  color: #894fc2;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+#tecnologias {
+  background-color: #e9e9e9;
+  width: 100%;
+  margin: 0;
+  padding: 80px 0;
+  display: flex;
+}
+
+.tecnologias {
+  color: #3d3d3d;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-inline-start: 8em;
+}
+
+.tecnologias h3,
+.tecnologias h2 {
+  margin: 0;
+}
+
+.tecnologias-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  width: 100%;
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tecnologias-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.coluna-tecnologia {
+  flex: 1;
+  min-width: 300px;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 24px;
+  border: 1px solid #f0f0f0;
+  transition: transform 0.3s ease;
+}
+
+.coluna-tecnologia:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.coluna-tecnologia h3 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 25px;
+}
+
+.style-tecnologias {
+  padding: 8px 18px;
+  background-color: #f3f3f3;
+  color: #444;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.style-tecnologias:hover {
+  background-color: #ffffff;
+  border-color: #894fc2;
+  color: #894fc2;
+  transform: scale(1.05);
+}
+
+.icone-titulo {
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+  vertical-align: middle;
+}

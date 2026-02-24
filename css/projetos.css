@@ -1,0 +1,158 @@
+/* ======================PROJECTS ======================= */
+
+#secao-projetos {
+  padding: 100px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projetos-header {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.subtitulo-roxo {
+  color: #894fc2;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 1rem;
+}
+
+.titulo-sessao {
+  font-size: 2.5rem;
+  color: #1a1a1a;
+  margin-top: 10px;
+}
+
+/* Grid de Projetos */
+.lista-projetos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+/* Card Individual */
+.card-projeto {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden; /* Corta a imagem nas bordas arredondadas */
+  border: 1px solid #eee;
+  transition: all 0.4s ease;
+}
+
+.card-projeto:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 2px 16px rgba(137, 79, 194, 0.1);
+  border-color: rgba(137, 79, 194, 0.3);
+}
+
+/* Container da Imagem com Efeito Hover */
+.projeto-imagem {
+  position: relative;
+  height: 240px;
+  overflow: hidden;
+}
+
+.projeto-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s ease;
+}
+
+.overlay-links {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(137, 79, 194, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  opacity: 0; /* Escondido por padrão */
+  transition: 0.4s ease;
+  backdrop-filter: blur(4px);
+}
+
+.card-projeto:hover .overlay-links {
+  opacity: 1;
+}
+
+.card-projeto:hover .projeto-imagem img {
+  transform: scale(1.1);
+}
+
+/* Botões dentro do card */
+.btn-glass {
+  background: white;
+  color: #894fc2;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.btn-outline {
+  border: 1px solid white;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Info do Projeto */
+.projeto-info {
+  padding: 25px;
+}
+
+.tags-mini {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.tags-mini span {
+  font-size: 0.7rem;
+  color: #894fc2;
+  background: rgba(137, 79, 194, 0.1);
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.projeto-info h3 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.projeto-info p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Botão Ver Mais */
+.ver-mais-minimalista {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.ver-mais-minimalista a {
+  color: #1a1a1a;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: 0.3s;
+}
+
+.ver-mais-minimalista a:hover {
+  color: #894fc2;
+  gap: 15px;
+}

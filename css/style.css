@@ -7,6 +7,15 @@
 /* Header */
 @import "./header.css";
 
+/* Tecnologias */
+@import "./tecnologias.css";
+
+/* Projetos */
+@import "./projetos.css";
+
+/* Contato */
+@import "./contato.css";
+
 /* Footer */
 @import "./footer.css";
 

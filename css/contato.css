@@ -1,0 +1,59 @@
+/* =================== CONTATO ================== */
+
+.container-contato {
+  background-color: #120a1a;
+  padding: 100px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-radius: 40px 40px 0 0; /* Curva suave no topo para conectar com o site */
+}
+
+.container-contato h3 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 500;
+  max-width: 30ch;
+  line-height: 1.4;
+  margin-bottom: 50px;
+}
+
+.contato-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  list-style: none;
+  padding: 0;
+}
+
+.contato-info li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.3s ease;
+}
+
+.contato-info li:hover {
+  transform: translateY(-5px);
+}
+
+.contato-info a {
+  color: #a6a6a6;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 400;
+  transition: color 0.3s;
+}
+
+.contato-info li:hover a {
+  color: #894fc2; /* Brilho roxo no hover */
+}
+
+.icons-contato {
+  width: 24px;
+  height: 24px;
+  opacity: 0.7;
+}

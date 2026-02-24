@@ -1,18 +1,18 @@
+/* No seu arquivo de estilo principal */
 footer {
-  background-color: #000000;
-  padding: 30px;
-
+  background-color: #120a1a;
+  padding: 40px 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%; /* No mobile, ela vira 100% */
-  max-width: 100%;
-  margin: 0 auto; /* Centraliza o conteúdo */
-  padding: 40px;
+  text-align: center;
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 footer span {
-  font-size: 1em;
-  font-weight: 300;
   color: #b3b3b3;
+  font-size: 0.9rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
 }
