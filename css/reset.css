@@ -17,6 +17,7 @@ body {
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
+  padding-top: 70px; /* Coloque aqui a altura aproximada do seu menu */
 }
 
 a {
