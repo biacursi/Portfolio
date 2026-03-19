@@ -106,7 +106,8 @@ function setupProjectSlider() {
   }
 
   function goToPage(pageIndex) {
-    if (pageIndex < 0 || pageIndex >= pageCount) return;
+    if (pageIndex < 0) pageIndex = pageCount - 1;
+    if (pageIndex >= pageCount) pageIndex = 0;
 
     const slideWidth = slides[0].getBoundingClientRect().width;
     const gap = parseInt(window.getComputedStyle(track).gap) || 0;
@@ -126,8 +127,8 @@ function setupProjectSlider() {
     });
 
     if (prevButton && nextButton) {
-      prevButton.disabled = currentPage === 0;
-      nextButton.disabled = currentPage === pageCount - 1;
+      prevButton.disabled = false;
+      nextButton.disabled = false;
     }
   }
 
