@@ -118,46 +118,87 @@
                 <h2 class="titulo-sessao">Projetos em Destaque</h2>
             </div>
 
-            <article class=" hidden-off delay-2">
-                <div class="lista-projetos">
-                    <article class="card-projeto">
-                        <div class="projeto-imagem">
-                            <img src="./img/bikcraft.png" alt="bikcraft">
-                            <div class="overlay-links">
-                                <a href="https://biacursi.github.io/bikcraft/" target="_blank" class="btn-glass">Ver Demo</a>
-                                <a href="https://github.com/biacursi/bikcraft" target="_blank" class="btn-outline">GitHub</a>
+            <article class="slider-container hidden-off delay-2">
+                <div class="slider-wrapper">
+                    <div class="lista-projetos">
+                        <article class="card-projeto">
+                            <div class="projeto-imagem">
+                                <img src="./img/bikcraft.png" alt="bikcraft">
+                                <div class="overlay-links">
+                                    <a href="https://biacursi.github.io/bikcraft/" target="_blank" class="btn-glass">Ver Demo</a>
+                                    <a href="https://github.com/biacursi/bikcraft" target="_blank" class="btn-outline">GitHub</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="projeto-info">
-                            <div class="tags-mini">
-                                <span>JS Puro</span>
-                                <span>CSS3</span>
-                                <span>HTML5</span>
+                            <div class="projeto-info">
+                                <div class="tags-mini">
+                                    <span>JS Puro</span>
+                                    <span>CSS3</span>
+                                    <span>HTML5</span>
+                                </div>
+                                <h3>Bikcraft</h3>
+                                <p>Site institucional desenvolvido para uma empresa fictícia que comercializa bicicletas elétricas artesanais.</p>
                             </div>
-                            <h3>Bikcraft</h3>
-                            <p>Site institucional desenvolvido para uma empresa fictícia que comercializa bicicletas elétricas artesanais.</p>
-                        </div>
-                    </article>
+                        </article>
 
-                    <article class="card-projeto">
-                        <div class="projeto-imagem">
-                            <img src="./img/FoneFake.png" alt="Fone Fake">
-                            <div class="overlay-links">
-                                <a href="https://biacursi.github.io/FoneFake/" target="_blank" class="btn-glass">Ver Demo</a>
-                                <a href="https://github.com/biacursi/FoneFake" target="_blank" class="btn-outline">GitHub</a>
+                        <article class="card-projeto">
+                            <div class="projeto-imagem">
+                                <img src="./img/FoneFake.png" alt="Fone Fake">
+                                <div class="overlay-links">
+                                    <a href="https://biacursi.github.io/FoneFake/" target="_blank" class="btn-glass">Ver Demo</a>
+                                    <a href="https://github.com/biacursi/FoneFake" target="_blank" class="btn-outline">GitHub</a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="projeto-info">
-                            <div class="tags-mini">
-                                <span>HTML/CSS</span>
-                                <span>Landing Page</span>
+                            <div class="projeto-info">
+                                <div class="tags-mini">
+                                    <span>HTML/CSS</span>
+                                    <span>Landing Page</span>
+                                </div>
+                                <h3>Fone Fake</h3>
+                                <p>Landing page moderna focada em conversão e design responsivo.</p>
                             </div>
-                            <h3>Fone Fake</h3>
-                            <p>Landing page moderna focada em conversão e design responsivo.</p>
-                        </div>
-                    </article>
+                        </article>
 
+                        <article class="card-projeto">
+                            <div class="projeto-imagem">
+                                <img src="./img/bikcraft.png" alt="bikcraft (exemplo)">
+                                <div class="overlay-links">
+                                    <a href="https://biacursi.github.io/bikcraft/" target="_blank" class="btn-glass">Ver Demo</a>
+                                    <a href="https://github.com/biacursi/bikcraft" target="_blank" class="btn-outline">GitHub</a>
+                                </div>
+                            </div>
+                            <div class="projeto-info">
+                                <div class="tags-mini">
+                                    <span>JS Puro</span>
+                                    <span>CSS3</span>
+                                    <span>HTML5</span>
+                                </div>
+                                <h3>Bikcraft (Exemplo)</h3>
+                                <p>Este é um exemplo para preencher o slider. O link leva para o mesmo projeto anterior.</p>
+                            </div>
+                        </article>
+
+                        <article class="card-projeto">
+                            <div class="projeto-imagem">
+                                <img src="./img/FoneFake.png" alt="Fone Fake (exemplo)">
+                                <div class="overlay-links">
+                                    <a href="https://biacursi.github.io/FoneFake/" target="_blank" class="btn-glass">Ver Demo</a>
+                                    <a href="https://github.com/biacursi/FoneFake/" target="_blank" class="btn-outline">GitHub</a>
+                                </div>
+                            </div>
+                            <div class="projeto-info">
+                                <div class="tags-mini">
+                                    <span>HTML/CSS</span>
+                                    <span>Landing Page</span>
+                                </div>
+                                <h3>Fone Fake (Exemplo)</h3>
+                                <p>Este é um exemplo para preencher o slider. O link leva para o mesmo projeto anterior.</p>
+                            </div>
+                        </article>
+                    </div>
                 </div>
+                <button class="slider-button prev" aria-label="Projeto anterior">‹</button>
+                <button class="slider-button next" aria-label="Próximo projeto">›</button>
+                <div class="slider-dots"></div>
             </article>
 
             <div class="ver-mais-minimalista">
@@ -172,36 +213,36 @@
 
         <section class="container-contato">
             <h3>Estou disponível para novos projetos no momento.<br>
-                Entre em contato comigo e marcamos uma conversa. 👋🏼<h3>
-                    <ul id="contato" class="contato-info">
-                        <li>
-                            <img src="./img/mail.svg" alt="mail icon" class="icons-contato">
-                            <a href="mailto:biancacursi@hotmail.com">biancacursi@hotmail.com</a>
-                        </li>
-                        <li>
-                            <img src="./img/phone.svg" alt="telefone icon" class="icons-contato" width="16" height="16">
-                            <a href="https://wa.me/5511959946277" target="_blank">+55 11 95994-6277</a>
-                        </li>
-                        <li>
-                            <img src="./img/instagram.svg" alt="instagram" class="icons-contato" width="16" height="16">
-                            <a href="https://instagram.com/biacursi" target="_blank">@biacursi</a>
-                        </li>
-                        <li>
-                            <img src="./img/github.svg" alt="github icon" class="icons-contato" width="16" height="16">
-                            <a href="https://github.com/biacursi" target="_blank">github.com/biacursi</a>
-                        </li>
-                        <li>
-                            <img src="./img/linkedin.svg" alt="LinkedIn icon" class="icons-contato" width="16" height="16">
-                            <a href="https://www.linkedin.com/in/bianca-marcelino-cursii/" target="_blank">LinkedIn</a>
-                        </li>
-                    </ul>
+                Entre em contato comigo e marcamos uma conversa. 👋🏼</h3>
+            <ul id="contato" class="contato-info">
+                <li>
+                    <img src="./img/mail.svg" alt="mail icon" class="icons-contato">
+                    <a href="mailto:biancacursi@hotmail.com">biancacursi@hotmail.com</a>
+                </li>
+                <li>
+                    <img src="./img/phone.svg" alt="telefone icon" class="icons-contato" width="16" height="16">
+                    <a href="https://wa.me/5511959946277" target="_blank">+55 11 95994-6277</a>
+                </li>
+                <li>
+                    <img src="./img/instagram.svg" alt="instagram" class="icons-contato" width="16" height="16">
+                    <a href="https://instagram.com/biacursi" target="_blank">@biacursi</a>
+                </li>
+                <li>
+                    <img src="./img/github.svg" alt="github icon" class="icons-contato" width="16" height="16">
+                    <a href="https://github.com/biacursi" target="_blank">github.com/biacursi</a>
+                </li>
+                <li>
+                    <img src="./img/linkedin.svg" alt="LinkedIn icon" class="icons-contato" width="16" height="16">
+                    <a href="https://www.linkedin.com/in/bianca-marcelino-cursii/" target="_blank">LinkedIn</a>
+                </li>
+            </ul>
 
         </section>
 
     </main>
     <footer>
         <span>
-            Feito com 💜 por &copy; Bianca Marcelino Cursi, 2025 - Alguns direitos reservados.
+            Feito com 💜 por &copy; <a href="https://www.linkedin.com/in/bianca-marcelino-cursii/" target="_blank">Bianca Cursi</a>, 2025 - Alguns direitos reservados.
         </span>
     </footer>
     <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">

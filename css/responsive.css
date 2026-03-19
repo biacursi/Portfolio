@@ -188,8 +188,13 @@
     display: none;
   }
 
-  .lista-projetos {
-    grid-template-columns: 1fr;
+  .card-projeto {
+    flex: 0 0 100%;
+    min-width: 100%;
+  }
+
+  .slider-button {
+    display: none;
   }
   .contato-info {
     grid-template-columns: 1fr 1fr;

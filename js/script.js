@@ -58,3 +58,85 @@ overlay.addEventListener("click", closeMenu);
 document.querySelectorAll(".nav-menu a").forEach((link) => {
   link.addEventListener("click", closeMenu);
 });
+
+// 4. SLIDER DE PROJETOS
+function setupProjectSlider() {
+  const sliderContainer = document.querySelector(
+    "#secao-projetos .slider-container",
+  );
+  if (!sliderContainer) return;
+
+  const track = sliderContainer.querySelector(".lista-projetos");
+  const slides = Array.from(track.children);
+  const nextButton = sliderContainer.querySelector(".next");
+  const prevButton = sliderContainer.querySelector(".prev");
+  const dotsNav = sliderContainer.querySelector(".slider-dots");
+
+  let itemsPerScreen = 0;
+  let pageCount = 0;
+  let currentPage = 0;
+
+  function initSlider() {
+    itemsPerScreen = window.innerWidth > 768 ? 2 : 1;
+    const totalItems = slides.length;
+
+    if (totalItems <= itemsPerScreen) {
+      if (nextButton) nextButton.style.display = "none";
+      if (prevButton) prevButton.style.display = "none";
+      if (dotsNav) dotsNav.style.display = "none";
+      track.style.transform = "translateX(0px)";
+      return;
+    } else {
+      if (dotsNav) dotsNav.style.display = "block";
+    }
+
+    pageCount = Math.ceil(totalItems / itemsPerScreen);
+    currentPage = Math.min(currentPage, pageCount - 1);
+
+    dotsNav.innerHTML = "";
+    for (let i = 0; i < pageCount; i++) {
+      const dot = document.createElement("button");
+      dot.classList.add("dot");
+      dot.setAttribute("aria-label", `Ir para slide ${i + 1}`);
+      dot.addEventListener("click", () => goToPage(i));
+      dotsNav.appendChild(dot);
+    }
+
+    goToPage(currentPage);
+  }
+
+  function goToPage(pageIndex) {
+    if (pageIndex < 0 || pageIndex >= pageCount) return;
+
+    const slideWidth = slides[0].getBoundingClientRect().width;
+    const gap = parseInt(window.getComputedStyle(track).gap) || 0;
+
+    const itemsToMove = pageIndex * itemsPerScreen;
+    const newTransform = itemsToMove * (slideWidth + gap);
+
+    track.style.transform = `translateX(-${newTransform}px)`;
+    currentPage = pageIndex;
+    updateUI();
+  }
+
+  function updateUI() {
+    const dots = Array.from(dotsNav.children);
+    dots.forEach((dot, index) => {
+      dot.classList.toggle("active", index === currentPage);
+    });
+
+    if (prevButton && nextButton) {
+      prevButton.disabled = currentPage === 0;
+      nextButton.disabled = currentPage === pageCount - 1;
+    }
+  }
+
+  nextButton.addEventListener("click", () => goToPage(currentPage + 1));
+  prevButton.addEventListener("click", () => goToPage(currentPage - 1));
+
+  window.addEventListener("resize", initSlider);
+
+  initSlider();
+}
+
+document.addEventListener("DOMContentLoaded", setupProjectSlider);
