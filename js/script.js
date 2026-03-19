@@ -135,6 +135,20 @@ function setupProjectSlider() {
   nextButton.addEventListener("click", () => goToPage(currentPage + 1));
   prevButton.addEventListener("click", () => goToPage(currentPage - 1));
 
+  // --- Adicionado: Suporte a Swipe (Toque) ---
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  sliderContainer.addEventListener("touchstart", (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+  });
+
+  sliderContainer.addEventListener("touchend", (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    if (touchEndX < touchStartX - 50) goToPage(currentPage + 1); // Deslizou para Esquerda -> Próximo
+    if (touchEndX > touchStartX + 50) goToPage(currentPage - 1); // Deslizou para Direita -> Anterior
+  });
+
   window.addEventListener("resize", initSlider);
 
   initSlider();
